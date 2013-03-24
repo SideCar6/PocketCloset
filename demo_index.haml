@@ -35,7 +35,48 @@
               %label.checkbox
                 %input{type: 'checkbox', value: 'remember-me'} Remember me
               %button.btn.btn-success.btn-block.btn-large{type: 'submit'} Sign in
+            %form.form-signin
               %p.center - OR -
               %button.btn.btn-primary.btn-block.btn-large{type: 'submit'} Create an account
+          %hr
+          .well.well-white
+            %form.form-signin
+              %input.input-block-level{type: 'text', placeholder: 'email'}
+              %input.input-block-level{type: 'password', placeholder: 'password'}
+              %button.btn.btn-primary.btn-block.btn-large{type: 'submit'} Create an account
+          %hr
+          .well.well-white
+            %form.form-signin
+              %input.input-block-level{type: 'text', placeholder: 'email'}
+              %button.btn.btn-warning.btn-block.btn-large{type: 'submit'} Reset my password
+          %hr
+          %h1.center You're signed in!
+          .well.well-white
+            %form.form-signin
+              %button.btn.btn-info.btn-block.btn-large{type: 'submit'} Sign out
+            %form.form-signin
+              %button.btn.btn-warning.btn-block.btn-large{type: 'submit'} Change my password
+            %form.form-signin
+              %button.btn.btn-danger.btn-block.btn-large{type: 'submit'} Close my account
+          %hr
+          %h1 Close account
+          .alert.alert-block
+            %h4 WARNING!
+            This will permanently destroy your account. Are you sure?
+          .well.well-white
+            .row-fluid
+              .span6
+                %button.btn.btn-success.btn-block.btn-large{type: 'submit'} No!
+              .span6
+                %form.form-signin
+                  %button.btn.btn-danger.btn-block.btn-large{type: 'submit'} Yes, close my account
+          %hr
+          %h1.center Change password
+          .well.well-white
+            %form.form-signin
+              %input.input-block-level{type: 'password', placeholder: 'current password'}
+              %input.input-block-level{type: 'password', placeholder: 'new password'}
+              %input.input-block-level{type: 'password', placeholder: 'confirm password'}
+              %button.btn.btn-warning.btn-block.btn-large{type: 'submit'} Change my password
     %script{src: 'jquery/jquery-1.9.1.js'}
     %script{src: 'bootstrap/js/bootstrap.min.js'}
