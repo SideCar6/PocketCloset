@@ -1,10 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
   <head>
     <title>Pocket Closet</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link href='bootstrap/css/bootstrap.min.css' media='screen' rel='stylesheet'>
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+      .well-white {
+        background-color: #fff;
+      }
+      .center {
+        text-align: center;
+      }
+      .form-signin input {
+        font-size: 2em;
+        height: auto;
+        padding: .4em .25em .1em .25em
+      }
+    </style>
+    <link href='bootstrap/css/bootstrap-responsive.min.css' media='screen' rel='stylesheet'>
   </head>
   <body>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span4 offset4'>
+          <h1 class='page-header'>
+            Pocket Closet
+            <small>What's in your pocket?</small>
+          </h1>
+          <div class='well well-white'>
+            <form class='form-signin'>
+              <input class='input-block-level' placeholder='email' type='text'>
+              <input class='input-block-level' placeholder='password' type='password'>
+              <label class='checkbox'>
+                <input type='checkbox' value='remember-me'>Remember me</input>
+              </label>
+              <button class='btn btn-success btn-block btn-large' type='submit'>Sign in</button>
+              <p class='center'>- OR -</p>
+              <button class='btn btn-primary btn-block btn-large' type='submit'>Create an account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src='jquery/jquery-1.9.1.js'></script>
     <script src='bootstrap/js/bootstrap.min.js'></script>
   </body>

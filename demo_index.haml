@@ -1,8 +1,41 @@
-%html
+:erb
+  <!DOCTYPE html>
+%html{lang: 'en'}
   %head
     %title Pocket Closet
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     %link{href: 'bootstrap/css/bootstrap.min.css', rel: 'stylesheet', media: 'screen'}
+    :css
+      body {
+        background-color: #f5f5f5;
+      }
+      .well-white {
+        background-color: #fff;
+      }
+      .center {
+        text-align: center;
+      }
+      .form-signin input {
+        font-size: 2em;
+        height: auto;
+        padding: .4em .25em .1em .25em
+      }
+    %link{href: 'bootstrap/css/bootstrap-responsive.min.css', rel: 'stylesheet', media: 'screen'}
   %body
+    .container-fluid
+      .row-fluid
+        .span4.offset4
+          %h1.page-header
+            Pocket Closet
+            %small What's in your pocket?
+          .well.well-white
+            %form.form-signin
+              %input.input-block-level{type: 'text', placeholder: 'email'}
+              %input.input-block-level{type: 'password', placeholder: 'password'}
+              %label.checkbox
+                %input{type: 'checkbox', value: 'remember-me'} Remember me
+              %button.btn.btn-success.btn-block.btn-large{type: 'submit'} Sign in
+              %p.center - OR -
+              %button.btn.btn-primary.btn-block.btn-large{type: 'submit'} Create an account
     %script{src: 'jquery/jquery-1.9.1.js'}
     %script{src: 'bootstrap/js/bootstrap.min.js'}
