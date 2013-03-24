@@ -1,0 +1,45 @@
+Collection: users
+
+{
+	_id: username,
+	name: { first: "FirstName", last: "LastName"},
+	email: "email@address.com",
+	password: "password",
+	birthday: XXXX-XX-XX,
+	gender: "gender",
+	zip: XXXXX,
+	closet: [
+				{
+					type: "type",	//top, pants or uni
+					style: "style", //v-neck, straight-leg, etc.
+					brand: "brand name",
+					nickname: "nickname",
+					dateAdded: XXXX-XX-XX,
+					lastWorn: XXXX-XX-XX,
+					wearCounter: X,
+					attributes: ["comfy", "sexy", "etc"],
+					weather: ["hot", "cold", "rainy", "etc"], // related to our weather API fields
+					colors: ["brown", "white"], //max at two or something
+					style: X, // 1-10
+					comfy: X, // 1-10
+					cuteness: X, // 1-10
+					size: X // numbers or letters
+				},
+				{
+					type: "type",	//top, pants or uni
+					style: "style", //v-neck, straight-leg, etc.
+					brand: "brand name",
+					nickname: "nickname",
+					dateAdded: XXXX-XX-XX,
+					lastWorn: XXXX-XX-XX,
+					wearCounter: X,
+					attributes: ["comfy", "sexy", "etc"],
+					weather: ["hot", "cold", "rainy", "etc"], // related to our weather API fields
+					colors: ["brown", "white"], //max at two or something
+					style: X, // 1-10
+					comfy: X, // 1-10
+					cuteness: X, // 1-10
+					size: X // numbers or letters
+				}
+			]
+}
